@@ -7,6 +7,7 @@ using namespace std;
 int DataHash::size() 
 {
 	return hashTable.size();
+	// return -1;
 }
 
 int insert(int key, Data value)
@@ -21,18 +22,20 @@ int insert(int key, Data value)
 	{
 		return 0;
 	}
+	// return -1;
 }
 
 int remove(int key)
 {
-	if(hashTable.erase(key) == 0) // number of elements with this key erased = 0
-	{
-		return -1;
-	}
-	else
-	{
-		return 0;
-	}
+	// if(hashTable.erase(key) == 0) // number of elements with this key erased = 0
+	// {
+		// return -1;
+	// }
+	// else
+	// {
+		// return 0;
+	// }
+	return -1;
 }
 
 int removeSmallest()
